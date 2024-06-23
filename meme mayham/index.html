@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Meme Mayham</title>
+        <style>
+            html,
+            body {
+                padding: 0;
+                margin: 0;
+                height: 100%;
+            }
+
+            body {
+                display: flex;
+            }
+
+            body,
+            canvas {
+                background-color: black;
+            }                             
+        
+            canvas {
+                width: 100%;
+                object-fit: contain;
+                image-rendering: crisp-edges;
+                image-rendering: pixelated;
+            }
+
+            img {
+                display: none;
+            }
+        </style>
+        <script type="module" src="./src/index.js"></script>
+    </head>
+    <body>
+        <canvas width="384" height="224"></canvas>         
+        
+        <img src="./images/ken-stage.png" alt="stage" />
+        <img src="./images/misc.png" alt="misc" />
+        <img src="./images/decals.png" alt="decals" />
+        <img src="./images/shadow.png" alt="shadow" />       
+        <img src="./images/knucks.png" alt="knucks" />
+        <img src="./images/frog.png" alt="frog" />
+
+        <audio 
+            id="theme-song" 
+            src="./sounds/theme-song.ogg" 
+            preload="auto" 
+            loop
+        ></audio>
+        <audio 
+            id="sound-fighter-land" 
+            src="./sounds/land.ogg" 
+            preload="auto" 
+        ></audio>       
+        <audio 
+            id="sound-fighter-light-punch" 
+            src="./sounds/light-punch-hit.ogg" 
+            preload="auto" 
+        ></audio>
+        
+        <audio 
+            id="sound-fighter-middle-punch" 
+            src="./sounds/medium-punch-hit.ogg" 
+            preload="auto"
+        ></audio>
+        
+        <audio 
+            id="sound-fighter-heavy-punch" 
+            src="./sounds/heavy-punch-hit.ogg" 
+            preload="auto" 
+        ></audio>
+        
+        <audio 
+            id="sound-fighter-light-kick" 
+            src="./sounds/light-kick-hit.ogg" 
+            preload="auto" 
+        ></audio>
+       
+        <audio 
+            id="sound-fighter-middle-kick" 
+            src="./sounds/medium-kick-hit.ogg" 
+            preload="auto" 
+        ></audio>
+       
+        <audio 
+            id="sound-fighter-heavy-hit" 
+            src="./sounds/heavy-kick-hit.ogg" 
+            preload="auto" 
+        ></audio>
+        
+        <audio 
+            id="HeavyAttack" 
+            src="./sounds/HeavyAttack.ogg" 
+            preload="auto" 
+        ></audio>
+       
+        <audio 
+            id="LightAttack" 
+            src="./sounds/LightAttack.ogg" 
+            preload="auto" 
+        ></audio>
+        
+        <audio 
+            id="MediumAttack" 
+            src="./sounds/MiddleAttack.ogg" 
+            preload="auto" 
+        ></audio>
+    </body> 
+</html>
